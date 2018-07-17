@@ -35,7 +35,7 @@ exports.error = function(request, response) {
 }
 
 exports.show = function(request, response) {
-	fs.readFile("a.png", "binary", function(error, file) {
+	fs.readFile("test.png", "binary", function(error, file) {
 		response.writeHead(200, {"Content-Type": "image/png"});
 		response.write(file, "binary");
 		response.end();
